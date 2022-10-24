@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form em JS</title>
+</head>
+<body>
+
+    <form action="#">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome" id="nom" placeholder="Emanuel Sacoman" maxlength="50"> <br>
+        <label for="tel">Telefone</label>
+        <input type="tel" name="tel" id="tel" placeholder="(00)00000-0000" maxlength="11" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> <br>
+        <label for="sex">Sexo</label>
+        <select name="sex" id="sex">
+            <option value="M">Homem</option>
+            <option value="F">Mulher</option>
+        </select><br>
+        <label for="nasc">Data Nascimento</label>
+        <input type="date" name="nasc" id="dat"> <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="ema" placeholder="exemplo@email.com" maxlength="50"> <br>
+        <label for="cpf">CPF</label>
+        <input type="text" maxlength="11" name="cpf" id="cpf" placeholder="000.000.000.00" onkeypress='return event.charCode >= 48 && event.charCode <= 57'> <br>
+        <label for="est">Estado</label>
+        <select name="est" id="est">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select> <br>
+        <label for="cid">Cidade</label>
+        <input type="text" name="cid" id="cid" placeholder="Cidade"> <br>
+        <label for="rua">Rua</label>
+        <input type="text" name="rua" id="rua" placeholder="Rua"> <br>
+        <label for="bai">Bairro</label>
+        <input type="text" name="bai" id="bai" placeholder="Bairro"> <br>
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep" placeholder="00000000" maxlength="8" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+        <input type="submit" onclick="enviar()">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
