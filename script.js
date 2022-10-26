@@ -41,19 +41,25 @@ var dataAtual = new Date();
 
 
 //  Alertas que aparecerão na tela após a finalização do formulário
-    
-     alert("Nome: "+nom + "\n"
-      + "Telefone: "+tel +"\n"
-       + "Sexo: "+sex + "\n"
-       + "Data de Nascimento: "+datb + "\n"
-       + "Email: "+ema + "\n"
-       + "CPF: "+cpf + "\n"
-       + "Estado: "+est + "\n"
-       + "Cidade: "+cid + "\n"
-       + "Rua: "+rua + "\n"
-       + "Bairro: "+bai + "\n"
-       + "Cep: "+cep);
 
-      alert("Sua idade: "+anos);
+if(nom == "" || tel == "" || datb == "" || ema == "" || cpf == "" || cid == "" || rua == "" || bai == "" || cep== ""){
+
+    alert("erro");
+
+} else {
+    alert("Nome: "+nom + "\n"
+     + "Telefone: "+tel +"\n"
+      + "Sexo: "+sex + "\n"
+      + "Data de Nascimento: "+datb + "\n"
+      + "Sua idade: "+anos + "\n"
+      + "Email: "+ema + "\n"
+      + "CPF: "+cpf + "\n"
+      + "Estado: "+est + "\n"
+      + "Cidade: "+cid + "\n"
+      + "Rua: "+rua + "\n"
+      + "Bairro: "+bai + "\n"
+      + "Cep: "+cep);
+}
+    
 
 }
